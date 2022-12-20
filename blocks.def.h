@@ -1,6 +1,7 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
+	{"", "curl wttr.in/Sarapul?format=\"%c%t+%m\"", 3600, 0},
 	{"", "echo 'нахуй прокрастинацию🖕'", 0, 0},
 	{"󰇚 ", "xbps-install -un | awk '{print $2}' | wc -l", 300, 0},
 	{"", "xset -q|grep LED| awk '{ if (substr ($10,5,1) == 1) print \"[RU]\"; else print \"[US]\"; }'", 1, 0},
